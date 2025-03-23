@@ -65,7 +65,7 @@ const BugDetail = ({ bug, onDelete, className }) => {
         <h1 className="text-2xl sm:text-3xl font-bold">{bug.title}</h1>
 
         <div className="text-sm text-muted-foreground">
-          <p>Reported by <span className="font-medium text-foreground">{bug.reportedBy}</span> on {formatTimeElapsede(bug.createdAt)}</p>
+          <p>Reported by <span className="font-medium text-foreground">{bug.reportedBy}</span> on {formatTimeElapsed(bug.createdAt)}</p>
           {bug.assignedTo && (
             <p>Assigned to <span className="font-medium text-foreground">{bug.assignedTo}</span></p>
           )}
